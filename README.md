@@ -1,7 +1,8 @@
 # ssh_key_dispense
 
 ## 使用方法
-1. 环境准备
+- **环境准备**
+
 **RHEL6/7、CENTOS6/7** 
 ``` bash
 # 安装pip
@@ -14,14 +15,14 @@ pip install fabric
 pip install pexpect
 ```
 
-2. clone本程序到本地目录
+- **clone本程序到本地目录**
 ``` bash
 git clone https://github.com/xiaotuanyu120/ssh-key-dispense.git
 ```
 
-3. 配置main.py，将需要生成key的host及其密码写进hosts={host: password, ...}
+- 配置main.py，将需要生成key的host及其密码写进hosts={host: password, ...}
 
-4. 命令操作
+- **命令操作**
 ``` bash
 # 执行下面命令列出可用操作
 fab -f main.py -l
@@ -37,7 +38,7 @@ fab -f main.py -l
 fab -f main.py *command*
 ```
 
-5. 连接方法
+- **连接方法**
 程序中已经配置过~/.ssh/config，所以直接执行下面命令即可
 ``` bash
 ssh *host*
