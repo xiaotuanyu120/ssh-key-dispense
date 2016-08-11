@@ -20,7 +20,7 @@ pip install pexpect
 git clone https://github.com/xiaotuanyu120/ssh-key-dispense.git
 ```
 
-- **3,配置main.py**
+### **3,配置main.py**
 将需要生成key的host及其密码写进main.py，格式为hosts={host: password, ...}
 
 ### **4,命令操作**
