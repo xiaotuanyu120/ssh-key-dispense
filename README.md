@@ -36,13 +36,13 @@ fab -f main.py -l
         ssh_key_gen_rsa:  在/root/.ssh/下生成默认id_rsa id_rsa.pub
 
 # 执行方式
-fab -f main.py *command*
+fab -f main.py command
 ```
 
 ### **5,连接方法**
 程序中已经配置过~/.ssh/config，所以直接执行下面命令即可
 ``` bash
-ssh *host*
+ssh host
 ```
 
 > 如果host对应的key存在，keygen_ssh.py会将老key文件更名为"host.old"&"host.pub.old"
