@@ -2,10 +2,18 @@
 
 # 使用方法
 0、环境准备
-    
-    linux安装ssh工具
-    
-    python安装fabric包
+**centos6**:
+linux安装ssh工具
+
+python安装fabric包
+
+**centos7**:
+``` bash
+yum install gcc libffi-devel python-devel openssl-devel
+pip install cryptography
+pip install fabric
+pip install pexpect
+```
 
 1、wget keygen_ssh.py和main.py到本地目录
 
