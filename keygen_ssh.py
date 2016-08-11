@@ -21,7 +21,7 @@ def key_gen(host="id_rsa"):
         child.expect(pexpect.EOF)
     except:
         e = sys.exc_info()[0]
-        print "KEYGEN ERROR" + e
+        print("KEYGEN ERROR" + e)
 
 
 def key_copy(host, password, id_rsa):
@@ -37,9 +37,9 @@ def key_copy(host, password, id_rsa):
         if index == 0:
             child.sendline('yes')
         elif index == 1:
-            print "start input password"
+            print("start input password")
             child.sendline(password)
         child.expect(pexpect.EOF)
     except:
         e = sys.exc_info()[0]
-        print "COPY ERROR" + e
+        print("COPY ERROR" + e)

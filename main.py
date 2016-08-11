@@ -47,7 +47,7 @@ def _ssh_config(configfile, host):
     else:
         with open(configfile, 'r') as fr:
             if 'Host '+host+'\n' in fr.readlines():
-                print "exist!"
+                print("exist!")
             else:
                 with open(configfile, 'a') as f:
                     f.write(hostconfig % (host, host, host))
