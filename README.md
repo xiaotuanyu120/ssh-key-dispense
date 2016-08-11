@@ -14,6 +14,7 @@ yum install gcc libffi-devel python-devel openssl-devel
 pip install fabric
 pip install pexpect
 ```
+> python3 fabric版本需要更换，<code>pip install fabric3</code>
 
 ### **2,clone本程序到本地目录**
 ``` bash
